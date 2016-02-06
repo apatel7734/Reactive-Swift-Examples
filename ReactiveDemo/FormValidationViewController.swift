@@ -19,28 +19,42 @@ class FormValidationViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     
     var formValidationObservable: Observable<Bool>!
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         combineLatestFormValidationObservables()
-        formValidationObservable.subscribe(submitButton.rx_enabled)
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        
     }
     
     
     func combineLatestFormValidationObservables(){
         formValidationObservable = Observable<Bool>.combineLatest(fullName.rx_text, email.rx_text, phoneNumber.rx_text) { (fullNameText, emailText, phoneNumberText) -> Bool in
-                return self.isEmailValid(emailText) && self.isPhoneNumberValid(phoneNumberText) && self.isFullNameValid(fullNameText)
-            }
+            return self.isEmailValid(emailText) && self.isPhoneNumberValid(phoneNumberText) && self.isFullNameValid(fullNameText)
+        }
+        
+        formValidationObservable.subscribe(submitButton.rx_enabled)
         
         formValidationObservable.subscribeNext { (isValid: Bool) -> Void in
-            print("subscribeNext : \(isValid)")
+            if isValid {
+                self.submitButton.backgroundColor = UIColor.blueColor()
+            }else{
+                self.submitButton.backgroundColor = UIColor.grayColor()
+            }
         }
-        //more observables here.....
+    }
+    
+    
+    @IBAction func onClickSubmit(sender: AnyObject) {
+        let alertController = UIAlertController(title: "Enabled", message: "Enabled", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        alertController.addAction(action)
+        presentViewController(alertController
+            , animated: true, completion: nil)
     }
     
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480E3AC61C656D6B00192E51 /* FakeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E3AC51C656D6B00192E51 /* FakeApi.swift */; };
+		480E3AC91C656DB500192E51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E3AC81C656DB500192E51 /* User.swift */; };
 		487869821C4C230200E09C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487869811C4C230200E09C7A /* AppDelegate.swift */; };
 		487869841C4C230200E09C7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487869831C4C230200E09C7A /* ViewController.swift */; };
 		487869871C4C230200E09C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487869851C4C230200E09C7A /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 		487869971C4C230200E09C7A /* ReactiveDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487869961C4C230200E09C7A /* ReactiveDemoTests.swift */; };
 		487869A21C4C230200E09C7A /* ReactiveDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487869A11C4C230200E09C7A /* ReactiveDemoUITests.swift */; };
 		4896BF0B1C4C416B00620EE4 /* FormValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4896BF0A1C4C416B00620EE4 /* FormValidationViewController.swift */; };
+		48F91A601C651E02006D65CF /* AutoCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F91A5F1C651E02006D65CF /* AutoCompleteViewController.swift */; };
+		48F91A641C653814006D65CF /* SimpleTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F91A631C653814006D65CF /* SimpleTableViewViewController.swift */; };
+		48F91A661C6538A8006D65CF /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F91A651C6538A8006D65CF /* SimpleTableViewCell.swift */; };
 		95EB8A2E8FB96494A1A9C2BC /* Pods_ReactiveDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC763B99A873267C76D2BA1 /* Pods_ReactiveDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +43,8 @@
 /* Begin PBXFileReference section */
 		15C2D096B7581BD7BC7B8657 /* Pods-ReactiveDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveDemo/Pods-ReactiveDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		2EC763B99A873267C76D2BA1 /* Pods_ReactiveDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		480E3AC51C656D6B00192E51 /* FakeApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeApi.swift; sourceTree = "<group>"; };
+		480E3AC81C656DB500192E51 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4860878F1C4EBC3800D833BF /* ReactivePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ReactivePlayground.playground; sourceTree = "<group>"; };
 		4878697E1C4C230200E09C7A /* ReactiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487869811C4C230200E09C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +60,9 @@
 		487869A11C4C230200E09C7A /* ReactiveDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveDemoUITests.swift; sourceTree = "<group>"; };
 		487869A31C4C230200E09C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4896BF0A1C4C416B00620EE4 /* FormValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidationViewController.swift; sourceTree = "<group>"; };
+		48F91A5F1C651E02006D65CF /* AutoCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteViewController.swift; sourceTree = "<group>"; };
+		48F91A631C653814006D65CF /* SimpleTableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewViewController.swift; sourceTree = "<group>"; };
+		48F91A651C6538A8006D65CF /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
 		D41A8B5752895AC6FCC6EC68 /* Pods-ReactiveDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveDemo/Pods-ReactiveDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480E3AC71C656DA700192E51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				480E3AC81C656DB500192E51 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		487869751C4C230200E09C7A = {
 			isa = PBXGroup;
 			children = (
@@ -107,13 +125,13 @@
 		487869801C4C230200E09C7A /* ReactiveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				480E3AC71C656DA700192E51 /* Model */,
+				48F91A611C651E06006D65CF /* ViewControllers */,
 				487869811C4C230200E09C7A /* AppDelegate.swift */,
-				487869831C4C230200E09C7A /* ViewController.swift */,
 				487869851C4C230200E09C7A /* Main.storyboard */,
 				487869881C4C230200E09C7A /* Assets.xcassets */,
 				4878698A1C4C230200E09C7A /* LaunchScreen.storyboard */,
 				4878698D1C4C230200E09C7A /* Info.plist */,
-				4896BF0A1C4C416B00620EE4 /* FormValidationViewController.swift */,
 				4860878F1C4EBC3800D833BF /* ReactivePlayground.playground */,
 			);
 			path = ReactiveDemo;
@@ -135,6 +153,19 @@
 				487869A31C4C230200E09C7A /* Info.plist */,
 			);
 			path = ReactiveDemoUITests;
+			sourceTree = "<group>";
+		};
+		48F91A611C651E06006D65CF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				487869831C4C230200E09C7A /* ViewController.swift */,
+				4896BF0A1C4C416B00620EE4 /* FormValidationViewController.swift */,
+				48F91A5F1C651E02006D65CF /* AutoCompleteViewController.swift */,
+				48F91A631C653814006D65CF /* SimpleTableViewViewController.swift */,
+				48F91A651C6538A8006D65CF /* SimpleTableViewCell.swift */,
+				480E3AC51C656D6B00192E51 /* FakeApi.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		9AD620C66B163740A5DE5723 /* Pods */ = {
@@ -336,7 +367,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480E3AC61C656D6B00192E51 /* FakeApi.swift in Sources */,
+				48F91A601C651E02006D65CF /* AutoCompleteViewController.swift in Sources */,
 				4896BF0B1C4C416B00620EE4 /* FormValidationViewController.swift in Sources */,
+				48F91A641C653814006D65CF /* SimpleTableViewViewController.swift in Sources */,
+				480E3AC91C656DB500192E51 /* User.swift in Sources */,
+				48F91A661C6538A8006D65CF /* SimpleTableViewCell.swift in Sources */,
 				487869841C4C230200E09C7A /* ViewController.swift in Sources */,
 				487869821C4C230200E09C7A /* AppDelegate.swift in Sources */,
 			);
